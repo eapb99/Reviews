@@ -1,0 +1,128 @@
+{% extends 'home.html' %}
+
+
+{% block body %}
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand-md navbar-info navbar-info">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Tia_Supermarket-Logo.svg/1200px-Tia_Supermarket-Logo.svg.png" alt="Tia" class="brand-image img-circle elevation-3" style="opacity: .8">
+            </a>
+            <div class="d-flex justify-content-center">
+                <h4 class="text-center">Amazon Reviews Movies</h4>
+            </div>
+        </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-users"></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Usuarios</span>
+                                <span class="info-box-number info-user"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <div class="info-box mb-3">
+                            <span class="info-box-icon bg-success elevation-1"><i class="fas fa-thumbs-up"></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Mayor Score</span>
+                                <span class="info-box-number info-best"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="clearfix hidden-md-up"></div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <div class="info-box mb-3">
+                            <span class="info-box-icon bg-danger elevation-1"><i
+                                    class="fas fa-thumbs-down"></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Menor Score</span>
+                                <span class="info-box-number info-worst"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <div class="info-box mb-3">
+                            <span class="info-box-icon bg-info elevation-1"><i class="fas fa-vote-yea"></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Score Promedio</span>
+                                <span class="info-box-number info-avg"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Default box -->
+                        <div class="card">
+                            <div class="card-body">
+                                {% block content %}
+
+                                {% endblock %}
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <!-- To the right -->
+        <div class="float-right d-none d-sm-inline">
+            Anything you want
+        </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    </footer>
+</div>
+
+{% block js %}
+{% endblock %}
+</body>
+{% endblock %}
