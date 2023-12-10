@@ -23,11 +23,11 @@ Datos del dataset de Amazon Movie Reviews almacenados en una base de datos Postg
 * Top 10 de mejores y peores scores
 * Primeros 200 registros
 
-![Tablas](imagenes/tablas.png)
+![Tablas](imagenes/Tablas.png)
 
 ## Visualizaciones:
 * Línea de tiempo de doble eje (fechas vs promedio de score y fechas vs promedio de helpfulness)
-![Visualizaciones](imagenes/visualizaciones.png)
+![Visualizaciones](imagenes/Visualizaciones.png)
 
 ### Restricciones de Visualización:
 * No se genera gráfica si hay registros únicos sin reviews en el tiempo o si se filtra por un usuario que no hizo reviews en el período seleccionado.
